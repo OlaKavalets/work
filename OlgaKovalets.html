@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork3</title>
+    <link href="forma.css" rel="stylesheet">
+</head>
+<body>
+    <div class="credit">
+    <h2>КРЕДИТЫ ОНЛАЙН </h2>
+</div>
+    <table> 
+        <tr>
+            <td style="width:20%">
+                <h5> Наши партнеры</h5>
+                <img src="tin.jpg" alt="tinkof">
+                <img src="sber.jpg" alt="sberbank">
+                <img src="rusjpg.jpg" alt="rusbank">
+                <img src="bks.jpg" alt="bksbank">
+                <img src="mk.jpg" alt="mkbank">
+                <img src="cen.jpg" alt="centerbank">
+            </td>
+            <td>
+            <h1> ОНЛАЙН-ЗАЯВКА на кредит </h1> 
+            <h4><i>во все банки вашего города</i></h4>
+    <form method="get">
+<div class="info">
+    <h4>ОБЩАЯ ИНФОРМАЦИЯ</h4>
+    <br>
+</div>
+ <hr>
+    Сумма:
+    <input type="range" name="sum" id="sum" 
+    min="5000" max="100000" step="5000" value="8000">
+    <!--Что необходимо сделать что бы на странице отображались значения-->
+   <br>
+   Срок (лет):
+    <input type="range" name="term" id="term" min="1" max="5" step="1" value="2">
+    <!--Что необходимо сделать что бы на странице отображались значения-->
+    <!-- <input  type="text"> добавляет окно-->
+    <br><br>
+    Тип ежемесячных платежей:<br><br>
+    <input class="type"  type="radio" name="payment" value="аннуит" >Аннуитетные
+    <input type="radio" name="payment" value="диф" >Дифференцированные
+      <input type="radio" name="payment" value="равные" >Равными долями
+    <br><br>
+    <hr>
+    <b class="text">Фамилия</b>
+    <input type="text"  pattern="^[А-Яа-яЁё\s]+$" placeholder="Петров" required>
+   <b class="text">Имя</b> 
+    <input type="text"  pattern="^[А-Яа-яЁё\s]+$" placeholder="Иван" required>
+    <b class="text">Отчество</b>
+    <input type="text"  pattern="^[А-Яа-яЁё\s]+$" placeholder="Иванович">
+    <b class="text">пол</b>
+    <select name="menwoman">
+        <option value="men"> мужчина</option>
+        <option value="woman"> женщина</option>
+    </select>
+    <br><br>
+    <p><b class="text">Дата рождения</b>
+    <input type="date" name="datebirth" required>
+       <!--как указать растояние между текстом и окном-->
+</p>
+ <p>
+    <b class="text">Трудоустройство</b>
+    <input type="radio" name="employment" value="Безработный" required>Безработный
+    <input type="radio" name="employment" value="Трудоустроен" checked required>Трудоустроен
+</p>
+      <p><b class="text">Телефон</b>  в формате +375-xx-xxx-xx-xx  <input type="tel" name="tel" 
+        pattern="+375-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"  placeholder="+375-29-444-22-55" required>
+          <!-- Вопрос: при вводе чисел в форму данные отправляются с частично вписанными цифрами(например 4 цифры)-->
+<hr>
+<button  class="main-button" type="reset"> Очистить</button>
+<button  class="main-button" type="submit"><b> Отправить</b></button>
+<!--<button type="reset">Очистить</button>-->
+<input type="checkbox" required> <i>Даю согласие на оброботку моих данных*</i> <br>
+<input type="checkbox"><i> Даю согласие на получение маркетинговой информации</i><br>
+<input type="checkbox" required> 
+<a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fcloud.rrb.by%2Fxblocks%2Ffiles%2FEL942X.docx%3Fv%3D893&wdOrigin=BROWSELINK" 
+target="_blank">
+<i>Прочитал(a) ЧТО ТО</i> </a></link> <i>и согласен(а) с условиями предоставления кредита*</i><br>
+</td>
+</tr>
+</table>
+</body>
+</html>
